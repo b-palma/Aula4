@@ -1,5 +1,6 @@
 import { isPalindrome } from "./palindrome";
 
+describe("isPalindrome Tests", () => {
 test("testIsPalindrome_EmptyString", () => {
   const result = isPalindrome("");
   expect(result).toBe(true);
@@ -18,4 +19,5 @@ test("testIsPalindrome_PalindromeString", () => {
 test("testIsPalindrome_NonPalindromeString", () => {
   const result = isPalindrome("hello");
   expect(result).toBe(false);
+});
 });
